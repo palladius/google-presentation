@@ -3,8 +3,9 @@ Google IO 2012/2013 HTML5 Slide Template
 
 Authors: Eric Bidelman <ebidel@gmail.com>
          Luke Mahé <lukem@google.com>
+         Riccardo Carlesso <ricc@google.com>
 
-URL: https://code.google.com/p/io-2012-slides
+Original code: https://code.google.com/p/io-2012-slides
 -->
 <!DOCTYPE html>
 <html>
@@ -49,19 +50,20 @@ URL: https://code.google.com/p/io-2012-slides
     <article>
       <ul>
         <li>IaaS</li>
-        <li>Ability to manage (via API) many entities:
-          <ul>
-            <li>VMs</li>
-            <li>Persistent Disks</li>
+        <li>An flourishing ecosystem of many entities:
+          <ul class="build">
+            <li>VM instances</li>
+            <li>Persistent Disks (and Snapshots)</li>
             <li>Networks (and firewall rules)</li>
             <li>Load balancer</li>
+            <li>More (images, kernels, zones, </li>
           </ul>
         </li>
-        <li>Ability to manage (via API) many entities:
-          <ul>
+        <li>Tools:
+          <ul class="build fade">
             <li>Cloud Developer Console</li>
             <li><tt>gcutil</tt> shell command </li>
-            <li class='red' >direct access to API :(</li>
+            <li class='red' >API Direct access (good for troubleshooting)</li>
             <li class='green' >Libraries built around the API</li>
           </ul>
         </li>
@@ -69,14 +71,43 @@ URL: https://code.google.com/p/io-2012-slides
     </article>
   </slide>
 
+
   <slide>
     <hgroup>
-      <h2>Slide with Bullets that Build</h2>
+      <h2>Images, Kernels, Zones</h2>
+    </hgroup>
+    <article>
+      <p>Pre-built images: (ADD_NOTE <code>gcutil listimages --project google</code> )</p> 
+      <ul > 
+        <li>Debian 6</li>
+        <li>Debian 7</li>
+        <li>CentOS 7</li>
+      </ul>
+      <p>Kernels </p> 
+      <p><code>gcutil listkernels</code></p>
+      <ul > 
+        <li>gce-20120621</li>
+        <li>gce-v20130813</li>
+        <li>.. your own Kernel" (soon)</li>
+      </ul>
+      <p><b>Zones</b> API v1beta15 added per-zone quotas and conf:</p>
+      <ul class="fade">
+        <li>europe-west1-ab</li>
+        <li>us-central1-ab</li>
+        <li>us-central2-ab</li>
+        <li>us-east1-ab</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>...</h2>
       <h3>Subtitle Placeholder</h3>
     </hgroup>
     <article>
-      <p>A list where items build:</p>
-      <ul class="build">
+      <p>Pre-built images: (ADD_NOTE <code>gcutil listimages --project google</code> )</p> 
+      <ul > 
         <li>Pressing 'h' highlights code snippets</li>
         <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
         <li>Pressing 'f' toggles fullscreen viewing</li>
@@ -84,21 +115,24 @@ URL: https://code.google.com/p/io-2012-slides
         <li>Pressing 'o' toggles overview mode</li>
         <li>Pressing 'ESC' toggles off these goodies</li>
       </ul>
-      <p>Another list, but items fade as they build:</p>
+      <p>API v1beta15 added per-zone quotas and conf:</p>
       <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
+        <li>europe-west1-a/b</li>
+        <li>us-central1-a/b</li>
+        <li>us-central2-a/b</li>
+        <li>us-east1-a/b</li>
       </ul>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
+      <h2>Cloud Support</h2>
     </hgroup>
     <article class="smaller">
       <ul>
+        <li>Many  <a href="https://cloud.google.com/support/packages" >packages</a>:</li>
+        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
         <li>All <a href="http://google.com">links</a> open in new tabs.</li>
         <li>To change that this, add <code>target="_self"</code> to the link.</li>
       </ul>
@@ -109,9 +143,11 @@ URL: https://code.google.com/p/io-2012-slides
     Hidden slides are left out of the presentation.
   </slide>
 
+
+  <!-- Slide #6 -->
   <slide>
     <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
+      <h2>gcutil example</h2>
       <h3>Subtitle Placeholder</h3>
     </hgroup>
     <article>
