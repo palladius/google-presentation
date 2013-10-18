@@ -84,7 +84,7 @@ First, install compass:
 Next, you'll want to watch for changes to the exiting .scss files in [`/theme/scss`](theme/scss)
 and any new one you add:
 
-    $ cd io-2012-slides
+    $ cd google-presentation
     $ compass watch
 
 This command automatically recompiles the .scss file when you make a change.
@@ -107,7 +107,7 @@ The slides can be run locally from `file://` making development easy :)
 If at some point you should need a web server, use [`serve.sh`](serve.sh). It will
 launch a simple one and point your default browser to [`http://localhost:8000/template.html`](http://localhost:8000/template.html):
 
-    $ cd io-2012-slides
+    $ cd google-presentation
     $ ./serve.sh
 
 You can also specify a custom port:
@@ -125,6 +125,6 @@ To disable presenter mode, hit [http://localhost:8000/template.html?presentme=fa
 
 Presenter mode is sticky, so refreshing the page will persist your settings.
 
----
+## Thanks
 
-That's all she wrote!
+Thanks to Dan Holevoet for the awesome code!
